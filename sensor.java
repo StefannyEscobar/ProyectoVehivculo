@@ -15,7 +15,7 @@ public class Sensor {
         this.estado = e;
     }
     public String toString(){
-        String estac="";
+        String estac = "";
         if(estado==1){
             estac="Estado: 1 (OCUPADO)";
         }else if(estado==0){

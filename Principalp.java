@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 public class PrincipalP{
     public static void main(String[] args){
@@ -6,11 +5,10 @@ public class PrincipalP{
         System.out.println("Usuario, ingrese la cantidad de pisos y la cantidad de espacios.");
         int pisos = scan.nextInt();
         int espacios = scan.nextInt();
-        int num = -1;
-              
+        
         Vehiculo.vehiculo = new Vehiculo [pisos][espacios];
         Sensor.sensores = new Sensor [pisos][espacios];
-    
+        
         for(int i=0;i<pisos;i++){
             for(int j=0;j<espacios;j++){
                 Sensor.sensores[i][j] = new Sensor();
@@ -18,30 +16,26 @@ public class PrincipalP{
         }
 
         Vehiculo.tamaño = (espacios*pisos);
-                System.out.println("Escriba una opción: ");
-                System.out.println("0. Salir del sitema.");
-                System.out.println("1. Sensores libres.");
-                System.out.println("2. Registrar parqueo de vehículo.");
-                System.out.println("3. Registrar parqueo de vehículo con valor comercial.");
-                System.out.println("4. Listar información vehículos que están parqueados.");
-                System.out.println("5. Mostrar cantidad vehículos que se han parqueado.");
-                System.out.println("6. Verificar estado de un lugar en el estacionamiento.");
-                System.out.println("7. Mostrar estado de sensores.");
-                System.out.println("8. Filtrar por color.");
-                System.out.println("9. Mostrar vehículos por valor comercial.");
 
-               while(num!=0){  
-                
-                    try{num = scan.nextInt();}
-                    catch(InputMismatchException e){
-                    scan.next();
-                    continue;
-                    }
+        System.out.println("Escriba una opción: ");
+        System.out.println("0. Salir del sitema.");
+        System.out.println("1. Sensores libres.");
+        System.out.println("2. Registrar parqueo de vehículo.");
+        System.out.println("3. Registrar parqueo de vehículo con valor comercial.");
+        System.out.println("4. Listar información vehículos que están parqueados.");
+        System.out.println("5. Mostrar cantidad vehículos que se han parqueado.");
+        System.out.println("6. Verificar estado de un lugar en el estacionamiento.");
+        System.out.println("7. Mostrar estado de sensores.");
+        System.out.println("8. Filtrar por color.");
+        System.out.println("9. Mostrar vehículos por valor comercial.");
+        int num=scan.nextInt();
+            
+               while(num!=0){                                        
                     switch(num){
                         case 1:
                             System.out.println(Sensor.sensorLibre());
                             break;
-                        case 2:
+                        case 2://hacerlo todo
                             System.out.println("Ingrese el piso y el espacio que desea: ");
                             int piso=scan.nextInt();
                             int espacio= scan.nextInt();
@@ -122,25 +116,19 @@ public class PrincipalP{
                             System.out.println("Comando inválido. Por favor, escriba un número de la lista.");
                             break;
                       }
-                    System.out.println("Escriba una opción: ");
-                    System.out.println("0. Salir del sitema.");
-                    System.out.println("1. Sensores libres.");
-                    System.out.println("2. Registrar parqueo de vehículo.");
-                    System.out.println("3. Registrar parqueo de vehículo con valor comercial.");
-                    System.out.println("4. Listar información vehículos que están parqueados.");
-                    System.out.println("5. Mostrar cantidad vehículos que se han parqueado.");
-                    System.out.println("6. Verificar estado de un lugar en el estacionamiento.");
-                    System.out.println("7. Mostrar estado de sensores.");
-                    System.out.println("8. Filtrar por color.");
-                    System.out.println("9. Mostrar vehículos por valor comercial.");
-                    try{num = scan.nextInt();}
-                    catch(InputMismatchException e){
-                    scan.next();
-                    continue;
-                    }            
+                      System.out.println("Escriba una opción: ");
+                      System.out.println("0. Salir del sitema.");
+                      System.out.println("1. Sensores libres.");
+                      System.out.println("2. Registrar parqueo de vehículo.");
+                      System.out.println("3. Registrar parqueo de vehículo con valor comercial.");
+                      System.out.println("4. Listar información vehículos que están parqueados.");
+                      System.out.println("5. Mostrar cantidad vehículos que se han parqueado.");
+                      System.out.println("6. Verificar estado de un lugar en el estacionamiento.");
+                      System.out.println("7. Mostrar estado de sensores.");
+                      System.out.println("8. Filtrar por color."); 
+                      System.out.println("9. Mostrar vehículos por valor comercial.");
+                      num = scan.nextInt();
                }
-                
-
                 System.out.println("Saliendo...");
     }
 }

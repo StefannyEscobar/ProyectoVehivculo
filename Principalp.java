@@ -35,7 +35,7 @@ public class PrincipalP{
                         case 1:
                             System.out.println(Sensor.sensorLibre());
                             break;
-                        case 2://hacerlo todo
+                        case 2:
                             System.out.println("Ingrese el piso y el espacio que desea: ");
                             int piso=scan.nextInt();
                             int espacio= scan.nextInt();

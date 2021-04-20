@@ -6,13 +6,13 @@ public class Sensor {
         estado = 0;
     }
     public Sensor(int e){
-        this.estado=e;  
+        this.estado = e;  
     }
     public int getEstado(){
         return estado;
     }
     public void setEstado(int e){
-        this.estado=e;
+        this.estado = e;
     }
     public String toString(){
         String estac="";

@@ -19,18 +19,18 @@ public class PrincipalP{
 
         Vehiculo.tamaño = (espacios*pisos);
 
-        System.out.println("Escriba una opción: ");
-        System.out.println("0. Salir del sitema.");
-        System.out.println("1. Sensores libres.");
-        System.out.println("2. Registrar parqueo de vehículo.");
-        System.out.println("3. Registrar parqueo de vehículo con valor comercial.");
-        System.out.println("4. Listar información vehículos que están parqueados.");
-        System.out.println("5. Mostrar cantidad vehículos que se han parqueado.");
-        System.out.println("6. Verificar estado de un lugar en el estacionamiento.");
-        System.out.println("7. Mostrar estado de sensores.");
-        System.out.println("8. Filtrar por color.");
-        System.out.println("9. Mostrar vehículos por valor comercial.");
                while(num!=0){  
+                System.out.println("Escriba una opción: ");
+                System.out.println("0. Salir del sitema.");
+                System.out.println("1. Sensores libres.");
+                System.out.println("2. Registrar parqueo de vehículo.");
+                System.out.println("3. Registrar parqueo de vehículo con valor comercial.");
+                System.out.println("4. Listar información vehículos que están parqueados.");
+                System.out.println("5. Mostrar cantidad vehículos que se han parqueado.");
+                System.out.println("6. Verificar estado de un lugar en el estacionamiento.");
+                System.out.println("7. Mostrar estado de sensores.");
+                System.out.println("8. Filtrar por color.");
+                System.out.println("9. Mostrar vehículos por valor comercial.");
                     try{num = scan.nextInt();}
                     catch(InputMismatchException e){
                     scan.next();
@@ -130,6 +130,10 @@ public class PrincipalP{
                 System.out.println("Saliendo...");
     }
 }
+      
+                            
+                              
+                        
       
                             
                               

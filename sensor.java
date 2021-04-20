@@ -21,7 +21,6 @@ public class Sensor {
         }else if(estado==0){
             estac= "Estado: 0 (LIBRE)";
         }
-        //no sé que no da
         return estac;
     }
 public static String sensorLibre(){

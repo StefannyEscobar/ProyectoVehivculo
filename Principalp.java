@@ -4,9 +4,9 @@ public class PrincipalP{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         System.out.println("Usuario, ingrese la cantidad de pisos y la cantidad de espacios.");
-        int pisos= scan.nextInt();
-        int espacios= scan.nextInt();
-        int num=-1;
+        int pisos = scan.nextInt();
+        int espacios = scan.nextInt();
+        int num = -1;
               
         Vehiculo.vehiculo = new Vehiculo [pisos][espacios];
         Sensor.sensores = new Sensor [pisos][espacios];
@@ -41,7 +41,7 @@ public class PrincipalP{
                         case 1:
                             System.out.println(Sensor.sensorLibre());
                             break;
-                        case 2://hacerlo todo
+                        case 2:
                             System.out.println("Ingrese el piso y el espacio que desea: ");
                             int piso=scan.nextInt();
                             int espacio= scan.nextInt();

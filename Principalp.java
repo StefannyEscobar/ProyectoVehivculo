@@ -36,10 +36,11 @@ public class PrincipalP{
                             System.out.println(Sensor.sensorLibre());
                             break;
                         case 2:
-                            System.out.println("Ingrese el piso y el espacio que desea: ");
-                            int piso=scan.nextInt();
-                            int espacio= scan.nextInt();
-                            if(Vehiculo.cantidad<=Vehiculo.getTamaño()){
+                            int piso, espacio;
+                            if(Vehiculo.cantidad<Vehiculo.getTamaño()){
+                                System.out.println("Ingrese el piso y el espacio que desea: ");
+                                piso = scan.nextInt();
+                                espacio = scan.nextInt();
                                 if(Sensor.sensores[piso][espacio].getEstado()==0){
                                     System.out.println("Ingrese por favor placa, marca y color");
                                     String placa = scan.next();
@@ -58,12 +59,11 @@ public class PrincipalP{
                             }
                             break;
                         case 3:
-                            System.out.println("Ingrese el piso y el espacio que desea: ");                         
-                            piso = scan.nextInt();
-                            espacio = scan.nextInt();
-                                
-                            if(Vehiculo.cantidad<=Vehiculo.getTamaño()){
-                                 if(Sensor.sensores[piso][espacio].getEstado()==0){
+                            if(Vehiculo.cantidad<Vehiculo.getTamaño()){
+                                System.out.println("Ingrese el piso y el espacio que desea: ");                         
+                                piso = scan.nextInt();
+                                espacio = scan.nextInt();
+                                if(Sensor.sensores[piso][espacio].getEstado()==0){
                                       System.out.println("Ingrese por favor placa, marca, color y valor comercial del vehículo.");
                                       String placa = scan.next();
                                       String marca = scan.next();

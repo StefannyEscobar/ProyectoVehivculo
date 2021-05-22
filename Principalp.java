@@ -132,11 +132,3 @@ public class PrincipalP{
                 System.out.println("Saliendo...");
     }
 }
-      
-                            
-                              
-                        
-      
-                            
-                              
-                        

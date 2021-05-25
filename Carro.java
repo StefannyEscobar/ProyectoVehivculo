@@ -7,7 +7,4 @@ public class Carro extends Vehiculo{
         super(p,m,c,v);
         setTipo("Carro");
     }
-    public String getTipo(){
-        return getTipo();
-    }
 }
